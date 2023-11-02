@@ -73,10 +73,11 @@ def PolProbEmission(beta,theta,phi):
 main.cd("3D_Pol")
 
 #point in the spherical plot
-nPoints = 1000000
+nPoints = 10000000
 #generate angles randomly gen on a sphere
 theta = 2 * m.pi * np.random.rand(nPoints)  # Azimuthal angle (longitude)
-phi = np.arccos(2 * np.random.rand(nPoints) - 1)  # Polar angle (latitude)
+phi =  m.pi * np.random.rand(nPoints)  # Azimuthal angle (longitude)
+#phi = np.arccos(2 * np.random.rand(nPoints) - 1)  # Polar angle (latitude)
 
 if not os.path.exists("3D_Pol"):
     os.makedirs("3D_Pol")
