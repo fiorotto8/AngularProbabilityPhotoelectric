@@ -121,8 +121,8 @@ for n,en in tqdm.tqdm(enumerate(energies)):
     # save the spherical plot
     #graph.Write()
     #generate the view and the folder to store temporary pics
-    th=[0,30,60,90]
-    ph=[0,60,120,180]
+    th=[0,30,0,90]
+    ph=[0,60,90,180]
     #cycle over the views
     for k in range(len(th)):
         canvas = ROOT.TCanvas("SphericalCanvas", "Spherical Plot", 800, 800)
